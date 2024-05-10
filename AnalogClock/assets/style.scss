@@ -1,0 +1,62 @@
+body{
+  margin: 0;
+}
+
+.clock-wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+
+  .analog-clock {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 5px #000;
+    padding: 15px;
+    box-sizing: border-box;
+
+    .clock-hinges-small {
+      width: 570px;
+      height: 570px;
+      box-sizing: border-box;
+      background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='570' ry='570' stroke='%23000000FF' stroke-width='17' stroke-dasharray='1%2c 18' stroke-dashoffset='86' stroke-linecap='butt'/%3e%3c/svg%3e");
+      border-radius: 570px;
+
+      .clock-hinges-large {
+        width: 570px;
+        height: 570px;
+        box-sizing: border-box;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='570' ry='570' stroke='%23000000FF' stroke-width='25' stroke-dasharray='1%2c 18' stroke-dashoffset='80' stroke-linecap='butt'/%3e%3c/svg%3e");
+        border-radius: 570px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .sec {
+          position: absolute;
+          background-color: transparent;
+          background-image: linear-gradient(black 50%, transparent 50%);
+          height: 45%;
+          width: 3px;
+        }
+
+        .minute {
+          background-color: transparent;
+          background-image: linear-gradient(black 50%, transparent 50%);
+          height: 45%;
+          width: 5px;
+        }
+
+        .hour {
+          background-color: transparent;
+          background-image: linear-gradient(black 50%, transparent 50%);
+          width: 5px;
+          height: 25%;
+        }
+      }
+    }
+  }
+}
